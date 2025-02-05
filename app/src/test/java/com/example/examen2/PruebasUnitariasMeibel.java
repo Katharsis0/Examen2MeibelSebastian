@@ -73,7 +73,7 @@ public class PruebasUnitariasMeibel {
     @Test
     public void testElementoPresente() {
         List<Integer> lista = Arrays.asList(1, 2, 3, 4, 5);
-        assertTrue(Calculadora.Encuentra(lista, 3));
+        assertTrue(Calculadora.Encuentra(lista, 6));
     }
 
     @Test
