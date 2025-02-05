@@ -1,4 +1,7 @@
 package com.example.examen2;
+
+import java.util.List;
+
 public class Calculadora {
 
     // Método para convertir el número a la base seleccionada (0: Binario, 1: Octal, 2: Decimal, 3: Hexadecimal)
@@ -67,5 +70,17 @@ public class Calculadora {
             default:
                 throw new IllegalArgumentException("Base de destino no soportada");
         }
+    }
+
+    //Nuevo método “Encuentra(lista, elemento)”, que recibe una lista de
+    //números enteros y retorna si el elemento está en la lista (True o False)
+    public static Boolean Encuentra(List<Integer> lista, int elemento){
+        for (int i=0; i<lista.size()  ;i++){
+            if (lista.get(i)==elemento){
+                return true;
+            }
+        }
+        return false;
+
     }
 }
